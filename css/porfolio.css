@@ -1,0 +1,314 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para alinear la sección about abajo */
+    justify-content: flex-start;
+    align-items: center;
+    height: auto; /* Cambiar a auto para que la página se ajuste al contenido */
+    scroll-behavior: smooth;
+}
+
+/* Container setup */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    margin-top: 5%;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Gallery styles */
+.gallery {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gallery .image img {
+    width: 100%;
+    height: 200px; /* Ajusta este valor según el alto deseado */
+    object-fit: cover; /* Asegura que las imágenes mantengan proporciones sin deformarse */
+    border-radius: 10px;
+    display: block;
+}
+
+/* About section styles */
+.about {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px; /* Espaciado respecto a la galería */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about .line {
+    width: 66%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto 20px auto;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Commissions section styles */
+.commissions {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px; /* Espaciado respecto a la sección about */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.commissions h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.commissions .line {
+    width: 66%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto 20px auto;
+}
+
+.commissions p, .commissions ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.commissions ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.commissions ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Personal section styles */
+.personal {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px; /* Espaciado respecto a la sección commissions */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.personal h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.personal .line {
+    width: 66%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto 20px auto;
+}
+
+.personal p, .personal ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.personal ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.personal ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.personal ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.personal ul li a:hover {
+    color: #ffffff;
+}
+
+/* Blog Section Styles */
+.blog {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px; /* Espaciado respecto a la sección personal */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.blog h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.blog .line {
+    width: 66%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto 20px auto;
+}
+
+.blog-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+}
+
+.blog-entry img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.blog-entry p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    text-align: left;
+    margin: 0;
+}
+
+
+
+/* Responsive Styles */
+/* Tablets */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .gallery {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .gallery .image img {
+        height: 150px; /* Menor altura para pantallas pequeñas */
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .sidebar h1 {
+        font-size: 20px;
+    }
+
+    .sidebar p {
+        font-size: 12px;
+    }
+
+    .sidebar nav ul li a {
+        font-size: 12px;
+    }
+
+    .gallery {
+        grid-gap: 10px;
+    }
+
+    .gallery .image img {
+        border-radius: 5px;
+        height: 150px;
+    }
+}
